@@ -3,7 +3,7 @@
     "translate": "Overburn"
   },
   "exclusive_set": "#draft:exclusive_set/overburn",
-  "supported_items": "#minecraft:enchantable/weapon",
+  "supported_items": "#draft:enchantable/weapons",
   "primary_items": "#minecraft:enchantable/sword",
   "weight": 5,
   "max_level": 5,
