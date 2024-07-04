@@ -1,0 +1,130 @@
+{
+  "description": {
+    "translate": "Explosive burst"
+  },
+  "supported_items": "#minecraft:enchantable/mace",
+  "weight": 5,
+  "max_level": 1,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:explode",
+          "damage_type": "minecraft:explosion",
+          "radius": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          },
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:explosion"
+          },
+          "large_particle": {
+            "type": "minecraft:explosion"
+          },
+          "sound": "entity.generic.explode",
+          "knockback_multiplier": 0,
+          "attribute_to_user": true,
+          "create_fire": false
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "movement": {
+              "fall_distance": {
+                "min": 1.5,
+                "max": 5
+              }
+            }
+          }
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:explode",
+          "damage_type": "minecraft:explosion",
+          "radius": 2,
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:explosion"
+          },
+          "large_particle": {
+            "type": "minecraft:explosion"
+          },
+          "sound": "entity.generic.explode",
+          "knockback_multiplier": 0,
+          "attribute_to_user": true,
+          "create_fire": false
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "movement": {
+              "fall_distance": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          }
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:explode",
+          "damage_type": "minecraft:explosion",
+          "radius": 3,
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:explosion"
+          },
+          "large_particle": {
+            "type": "minecraft:explosion"
+          },
+          "sound": "entity.generic.explode",
+          "attribute_to_user": true,
+          "create_fire": false
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "movement": {
+              "fall_distance": {
+                "min": 10
+              }
+            }
+          }
+        }
+      }
+    ],
+    "minecraft:smash_damage_per_fallen_block": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": -1
+        }
+      }
+    ]
+  }
+}

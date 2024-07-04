@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "draft:shadow_strike",
+    "draft:gravity",
+    "draft:bacon_slicer",
+    "draft:turbulence",
+    "draft:magic_protection",
+    "draft:melee_protection",
+    "draft:spread",
+    "draft:focus",
+    "draft:overburn"
+  ]
+}

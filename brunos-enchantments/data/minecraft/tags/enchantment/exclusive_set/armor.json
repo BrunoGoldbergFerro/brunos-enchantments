@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "draft:magic_protection",
+    "draft:light_shield",
+    "draft:melee_protection"
+  ]
+}
