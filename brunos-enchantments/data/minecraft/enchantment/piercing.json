@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.minecraft.piercing"
   },
-  "exclusive_set": "#minecraft:exclusive_set/crossbow",
+  "exclusive_set": "#minecraft:exclusive_set/damage",
   "supported_items": "#draft:enchantable/weapons",
   "weight": 10,
   "max_level": 4,
